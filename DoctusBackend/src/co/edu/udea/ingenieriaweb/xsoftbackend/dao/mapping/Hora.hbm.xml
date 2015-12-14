@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="co.edu.udea.ingenieriaweb.xsoftbackend.dto.Hora" table="hora" >
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="increment" />
+        </id>    
+        <property name="hora" type="java.lang.Integer">
+            <column name="numhora" />
+        </property>
+        <property name="fecha" type="java.lang.String">
+            <column name="fecha" />
+        </property> 
+        <property name="idactividad" type="java.lang.String">
+            <column name="actividad" />
+        </property>                
+    </class>
+</hibernate-mapping>
